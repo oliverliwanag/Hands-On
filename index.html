@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">o.o</a>
+
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="profile">
+            <img src="profile.jpg" alt="profile picture">
+        </div>
+        <div class="home-content">
+            <h1>John Oliver Liwanag</h1>
+            <p>I am an IT student passionate about design, dedicated to turning ideas into intuitive and visually engaging digital experiences</p>
+            <button class="more-btn" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">More About Me</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>About</h1>
+            <p>
+                As an IT student with a passion for design, digital art, and editing, 
+                I’m still building my skills and gaining hands-on experience. 
+                My focus is on learning new tools and techniques to help bring ideas to life 
+                in visually appealing and functional ways. While I may be at the beginning of my journey, 
+                I am committed to improving my abilities and excited to grow in both design and technology, 
+                learning how to turn ideas into engaging, functional digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="skills-content">
+            <div class="skill-box">
+                <ion-icon name="brush"></ion-icon>
+                <h2>Digital Art</h2>
+            </div>
+            <div class="skill-box">
+                <ion-icon name="color-wand"></ion-icon>
+                <h2>Designing</h2>
+            </div>
+            <div class="skill-box">
+                <ion-icon name="create-outline"></ion-icon>
+                <h2>Editing</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h1>Contact Information</h1>
+            <div class="contact-info">
+                <div class="info-box">
+                    <ion-icon name="mail"></ion-icon>
+                    <a href="mailto:oliveralvarezliwanag@gmail.com">oliveralvarezliwanag@gmail.com</a>
+                </div>
+                <div class="info-box">
+                    <ion-icon name="call"></ion-icon>
+                    <a href="tel:09605116853">09605116853</a>
+                </div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/o.oliverliwanag/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.facebook.com/o.oliverliwanag/"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Oliver Liwanag. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

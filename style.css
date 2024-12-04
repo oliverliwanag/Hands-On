@@ -1,0 +1,482 @@
+*{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+.header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+}
+
+.logo{
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    transition: 0.3s ease;
+    text-decoration: none;
+    padding-left: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 100px;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: white;
+    margin: 25px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: yellowgreen;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    color: white;
+}
+
+.profile img{
+    border-radius: 50%;
+    padding: 20px 50% 0;
+    height: 400px;
+    width: 400px;
+}
+
+.home-content {
+    max-width: 800px;
+    padding: 20px 10% 0;
+}
+
+.home-content h1 {
+    font-size: 50px;
+}
+
+.home-content p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 25px 0 30px;
+}
+
+.more-btn{
+    width: 500;
+    display: flex;
+    gap: 2em;
+    padding: 13px 28px;
+    background-color: yellowgreen;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.more-btn:hover{
+    background-color: black;
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+    height: 30vh
+}
+
+.about-content h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-weight: 800;
+    background-color: yellowgreen;
+    padding: 10px;
+    max-width: 200px;
+    margin-left: 400px;
+}
+
+.about-content p{
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 2em 0 3em;
+    max-width: 1000px;
+    line-height: 2;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 3em;
+    background: black;
+    height: 40vh
+}
+
+.skills-content {
+    display: flex; 
+    justify-content: center; 
+    gap: 2em;
+}
+
+.skills h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.skills-content h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px; 
+    background-color: yellowgreen; 
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+}
+
+.skills-content div ion-icon {
+    font-size: 80px; 
+    color: black; 
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+    height: 30vh
+}
+
+.contact h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.contact-info div ion-icon {
+    font-size: 35px; 
+    color: yellowgreen; 
+}
+
+.info-box {
+    border: 2px solid white; 
+    border-radius: 10px;
+    padding: 20px 20px; 
+    margin: 20px; 
+    display: flex; 
+    align-items: center; 
+    background-color: black; 
+}
+
+.info-box ion-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: yellowgreen;
+}
+
+.info-box a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    font-size: 40px; 
+    color: yellowgreen; 
+    margin-top: 30px;
+}
+
+footer {
+    background-color: yellowgreen;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .home {
+        width: 100%;
+        flex-direction: column;
+        gap: 2em;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .navbar {
+        padding-right: 50px;
+    }
+
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    .navbar a{
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .profile img {
+        border-radius: 50%;
+        padding: 20px;
+        margin-top: 100px;
+        height: 400px;
+        width: 400px;
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .more-btn{
+        font-size: 16px;
+        margin-left: 200px;
+        font-weight: 600;
+        transition: 0.3 ease;
+        cursor: pointer;
+    }
+    
+    .more-btn:hover{
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+    }
+    
+    .about-content h1{
+        font-size: 40px;
+        margin-top: 200px;
+        margin-left: 210px;
+    }
+    
+    .about-content p{
+        font-size: 15px;
+    }
+
+    .skills h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .skills-content h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .skill-box {
+        padding: 10px; 
+        width: 180px;
+        height: 100px;
+    }
+
+    .contact h1 {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .contact h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+    
+    .contact-info div ion-icon {
+        font-size: 30px;
+    }
+    
+    .info-box {
+        padding: 15px 15px; 
+        margin: 15px; 
+    }
+    
+    .info-box ion-icon {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+    
+    .info-box a {
+        font-size: 15px;
+    }
+    
+    .socials {
+        font-size: 30px;
+    }
+    
+    footer {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding-right: 30px;
+    }
+
+    .logo{
+        font-size: 15px;
+        padding-left: 5px;
+    }
+
+    .profile img {
+        padding: 10px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .home-content h1 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 10px;
+    }
+
+    .more-btn{
+        width: 400;
+        font-weight: 800;
+        font-size: 9px;
+        margin-left: 80px;
+        padding: 8px 22px;
+        transition: 0.3 ease;
+        cursor: pointer;
+    }
+    
+    .more-btn:hover{
+        background-color: black;
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+    }
+
+    .about-content h1{
+        font-size: 30px;
+        margin-left: 55px;
+        padding: 4px;
+    }
+    
+    .about-content p{
+        font-size: 9px;
+        font-weight: 500;
+    }
+
+    .skills-content {
+        gap: 1em;
+    }
+
+    .skills h1{
+        font-size: 30px;
+    }
+
+    .skills-content h2{
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .skill-box {
+        padding: 4px; 
+        width: 80px;
+        height: 40px;
+    }
+
+    .contact h1 {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .contact h1 {
+        font-size: 30px;
+    }
+    
+    .contact-info div ion-icon {
+        font-size: 30px;
+    }
+    
+    .info-box {
+        padding: 10px 10px; 
+        margin: 10px; 
+    }
+    
+    .info-box ion-icon {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    
+    .info-box a {
+        font-size: 12px;
+    }
+    
+    .socials {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        padding: 1;
+        font-size: 9px;
+    }
+}
